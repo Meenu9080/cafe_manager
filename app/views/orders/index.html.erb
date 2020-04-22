@@ -1,0 +1,35 @@
+<section class="OrderPage">
+
+  <p id="notice"><%= params[:notice] %></p>
+
+  <div class="OrderHeader">
+    <h1 class="OrderHeader-title">Orders</h1>
+    <p class="OrderHeader-newOrderLink"><%= link_to "New Order", new_order_path %></p>
+  </div>
+
+  <table class="OrderTable">
+    <thead class="OrderTable-head">
+      <tr>
+        <th class="OrderTable-column1Header">User</th>
+        <th class="OrderTable-column2Header">Date</th>
+        <th class="OrderTable-column3Header">Delivered at</th>
+        <th class="OrderTable-column4Header">Status</th>
+        <th colspan="3" class="OrderTable-column5Header">Options</th>
+      </tr>
+    </thead>
+
+    <tbody class="OrderTable-body">
+      <% @orders.each do |order| %>
+        <tr>
+          <td class="OrderTable-tableValue"><%= order.user.first_name + " " + order.user.last_name %></td>
+          <td class="OrderTable-tableValue"><%= order.date %></td>
+          <td class="OrderTable-tableValue"><%= order.delivered_at %></td>
+          <td class="OrderTable-tableValue"><%= order.status %></td>
+          <% if (not(@current_user.role == "customer")) and @your_order %>
+            <td class="OrderTable-tableValue"><%= link_to "Edit", edit_order_path(order) %></td>
+          <% end %>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</section>

@@ -1,0 +1,81 @@
+.NewUserPage {
+  max-width: 700px;
+  margin: 100px auto;
+  font-family: sans-serif;
+  align-items: center;
+}
+
+.NewUserPage-title {
+  font-size: 32px;
+  color: rgb(216, 98, 1);
+  text-align: center;
+}
+
+.NewUserPage-form {
+  background-color: lightgray;
+  margin: 50px auto;
+  max-width: 600px;
+  border: 1px solid transparent;
+  border-radius: 75px;
+  box-shadow: 0 5px 20px 0px rgba(3, 1, 1, 0.1);
+}
+
+.NewUserPage-field {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  padding-left: 20%;
+  display: flex;
+}
+
+.NewUserForm-title {
+  padding-top: 5px;
+  font-size: 20px;
+  color: rgb(104, 102, 101);
+  font-weight: 1000;
+}
+
+.NewUserForm-firstNameInput {
+  margin-left: 35px;
+  border: 0.5px solid transparent;
+  height: 25px;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.NewUserForm-lastNameInput {
+  margin-left: 35px;
+  border: 0.5px solid transparent;
+  height: 25px;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.NewUserForm-emailInput {
+  margin-left: 80px;
+  border: 0.5px solid transparent;
+  height: 25px;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.NewUserForm-passwordInput {
+  margin-left: 40px;
+  border: 0.5px solid transparent;
+  height: 25px;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.NewUserForm-submitButton {
+  margin-left: 40%;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  height: 50px;
+  border: 1px solid rgb(216, 98, 1);
+  border-radius: 10px;
+  background-image: linear-gradient(rgb(216, 98, 1),rgb(212, 129, 46));
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+}

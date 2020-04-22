@@ -1,0 +1,17 @@
+<section class="ShowMenuItemPage">
+
+  <p id="notice" class="ShowMenuItemPage-createdMessage"><%= notice %></p>
+
+  <p class="ShowMenuItemPage-createdMenuItemDetails">Menu: <%= @menu_item.menu_id %></p>
+
+  <p class="ShowMenuItemPage-createdMenuItemDetails">Menu item name: <%= @menu_item.menu_item_name %></p>
+
+  <p class="ShowMenuItemPage-createdMenuItemDetails">Menu item price: <%= @menu_item.menu_item_price %></p>
+
+  <p class="ShowMenuItemPage-createdMenuItemDetails">Stock: <%= @menu_item.stock %></p>
+
+  <p class="ShowMenuItemPage-link">
+  <%= link_to "Edit", edit_menu_item_path(@menu_item, :current_menu_id => @current_menu_id) %> |
+  <%= link_to "Back", menu_items_path(:current_menu_id => @current_menu_id) %>
+  </p>
+</section>

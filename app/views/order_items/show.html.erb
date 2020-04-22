@@ -1,0 +1,19 @@
+<section class="ShowOrderItemPage">
+  <p id="notice" class="ShowOrderItemPage-createdMessage"><%= notice %></p>
+
+  <p class="ShowOrderItemPage-createdOrderItemDetails">Order: <%= @order_item.order_id %></p>
+
+  <p class="ShowOrderItemPage-createdOrderItemDetails">Menu item: <%= @order_item.menu_item_id %></p>
+
+  <p class="ShowOrderItemPage-createdOrderItemDetails">Menu item name: <%= @order_item.menu_item_name %></p>
+
+  <p class="ShowOrderItemPage-createdOrderItemDetails">Menu item price: <%= @order_item.menu_item_price %></p>
+
+  <p class="ShowOrderItemPage-createdOrderItemDetails">Quantity: <%= @order_item.quantity %></p>
+
+  <p class="ShowOrderItemPage-createdOrderItemDetails">Total: <%= @order_item.total %></p>
+
+  <p class="ShowOrderItemPage-link">
+    <%= link_to "Edit", edit_order_item_path(@order_item) %> | <%= link_to "Back", order_items_path %>
+  </p>
+</section>

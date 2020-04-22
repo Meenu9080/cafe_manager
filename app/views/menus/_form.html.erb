@@ -1,0 +1,30 @@
+<section class="MenuForm">
+  <%= form_with(model: menu, local: true) do |form| %>
+    <% if menu.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(menu.errors.count, "error") %> prohibited this menu from being saved:</h2>
+
+        <ul>
+          <% menu.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="MenuForm-field">
+      <p class="MenuForm-fieldTitle"><%= form.label :menu_name %></p>
+      <div class="MenuForm-menuNameInput">
+        <%= form.text_field :menu_name %>
+      </div>
+    </div>
+
+    <div class="MenuForm-field">
+      <p class="MenuForm-fieldTitle"><%= form.label :active %></p>
+      <div class="MenuForm-menuActiveInput">
+        <%= form.check_box :active %>
+      </div>
+    </div>
+    <%= form.submit class: "MenuForm-submitButton" %>
+  <% end %>
+</section>

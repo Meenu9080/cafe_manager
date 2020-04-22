@@ -1,0 +1,15 @@
+<section class="ShowOrderPage">
+  <p id="notice" class="ShowOrderPage-createdMessage"><%= notice %></p>
+
+  <p class="ShowOrderPage-createdOrderDetails">User: <%= @order.user_id %></p>
+
+  <p class="ShowOrderPage-createdOrderDetails">Date: <%= @order.date %></p>
+
+  <p class="ShowOrderPage-createdOrderDetails">Delivered at: <%= @order.delivered_at %></p>
+
+  <p class="ShowOrderPage-createdOrderDetails">Status: <%= @order.status %></p>
+
+  <p class="ShowOrderPage-link">
+    <%= link_to "Edit", edit_order_path(@order) %> | <%= link_to "Back", orders_path %>
+  </p>
+</section>

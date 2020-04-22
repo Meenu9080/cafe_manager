@@ -1,0 +1,228 @@
+.MenuItemPage,
+.NewMenuItemPage,
+.ShowMenuItemPage,
+.EditMenuItemPage {
+    max-width: 1000px;
+    margin-left: 160px;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-top: auto;
+    font-family: sans-serif;
+    align-items: center;
+    display: inline-block;
+}
+
+.MenuItemHeader {
+    display: inline-flex;
+}
+
+.MenuItemHeader-title1,
+.NewMenuItemPage-title,
+.EditMenuItemPage-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0.14px;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    color: rgb(128, 5, 5);
+}
+
+.MenuItemHeader-title2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0.14px;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    color: rgb(128, 5, 5);
+}
+
+.MenuItemHeader-newMenuItemLink {
+    margin-left: 680px;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: italic;
+    color: rgb(128, 5, 5);
+}
+
+.MenuItemTable {
+    border: 1px solid transparent;
+    border-radius: 30px;
+    width: 100%;
+    box-shadow: 0 5px 20px 0px rgba(3, 1, 1, 0.1);
+}
+
+.MenuItemTable-head {
+    background-color: lightgray;
+    color: rgb(104, 102, 101);
+    font-size: 20px;
+    text-align: center;
+}
+
+.MenuItemTable-column1Header {
+    border: 3px solid white;
+    border-left-width: 1px;
+    border-top-left-radius: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 20%;
+}
+
+.MenuItemTable-column2Header {
+    border: 3px solid white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 30%;
+}
+
+.MenuItemTable-column3Header {
+    border: 3px solid white;
+    border-top-right-radius: 30px;
+    border-right-width: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 20%;
+}
+
+.MenuItemTable-column4Header {
+    border: 3px solid white;
+    border-top-right-radius: 30px;
+    border-right-width: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 20%;
+}
+
+.MenuItemTable-column5Header {
+    border: 3px solid white;
+    border-top-right-radius: 30px;
+    border-right-width: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 20%;
+}
+
+.MenuItemTable-body {
+    max-height: 585px;
+    overflow: auto;
+}
+
+.MenuItemTable-tableValue {
+    font-size: 15px;
+    color: rgb(128, 5, 5);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.MenuItemTable-tableValue1 {
+    font-size: 15px;
+    color: rgb(128, 5, 5);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    text-align: center;
+}
+
+.MenuItemTable-tableValue2 {
+    font-size: 15px;
+    color: rgb(128, 5, 5);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    width: 80px;
+}
+
+.MenuItemTable-tableValue3 {
+    font-size: 15px;
+    color: rgb(128, 5, 5);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    width: 80px;
+    height: 20px;
+}
+
+.MenuItemForm {
+    background-image: linear-gradient(rgb(236, 110, 8), rgb(235, 151, 83));
+    margin: 0 auto;
+    max-width: 700px;
+    border: 1px solid transparent;
+    border-radius: 75px;
+    box-shadow: 0 5px 20px 0px rgba(3, 1, 1, 0.1);
+}
+
+.MenuItemForm-field {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    padding-left: 20%;
+    display: flex;
+}
+
+.MenuItemForm-fieldTitle {
+    padding-top: 5px;
+    font-size: 20px;
+    color: white;
+    font-weight: 1000;
+}
+
+.MenuItemForm-menuNameInput {
+    margin-left: 140px;
+}
+
+.MenuItemForm-menuItemNameInput {
+    margin-left: 35px;
+}
+
+.MenuItemForm-menuItemPriceInput {
+    margin-left: 40px;
+}
+
+.MenuItemForm-menuItemStockInput {
+    margin-left: 140px;
+}
+
+.MenuItemForm-submitButton {
+    margin-left: 35%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    height: 50px;
+    border: 1px solid rgb(128, 5, 5);
+    border-radius: 10px;
+    background-color: rgb(128, 5, 5);
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+}
+
+.NewMenuItemPage-menuItemsPageLink,
+.ShowMenuItemPage-link,
+.EditMenuItemPage-link {
+    margin-top: 100px;
+    margin-left: 200px;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: italic;
+    color: rgb(128, 5, 5);
+}
+
+.ShowMenuItemPage-createdMessage {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    font-style: italic;
+    padding-bottom: 30px;
+}
+
+.ShowMenuItemPage-createdMenuItemDetails {
+    text-align: center;
+    color: rgb(128, 5, 5);
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 30px;
+}

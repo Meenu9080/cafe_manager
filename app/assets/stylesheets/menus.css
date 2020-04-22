@@ -1,0 +1,202 @@
+.MenuPage,
+.ShowMenuPage,
+.EditMenuPage {
+    max-width: 1000px;
+    margin-left: 160px;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-top: auto;
+    font-family: sans-serif;
+    align-items: center;
+    display: inline-block;
+}
+
+.NewMenuPage {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-family: sans-serif;
+    align-items: center;
+}
+
+.MenuHeader {
+    display: inline-flex;
+}
+
+.MenuHeader-title,
+.NewMenuPage-title,
+.EditMenuPage-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0.14px;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    color: rgb(128, 5, 5);
+}
+
+.MenuHeader-newMenuLink {
+    margin-left: 800px;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: italic;
+    color: rgb(128, 5, 5);
+}
+
+.MenuTable {
+    border: 1px solid transparent;
+    border-radius: 30px;
+    width: 100%;
+    box-shadow: 0 5px 20px 0px rgba(3, 1, 1, 0.1);
+}
+
+.MenuTable-head {
+    background-color: lightgray;
+    color: rgb(104, 102, 101);
+    font-size: 20px;
+    text-align: center;
+}
+
+.MenuTable-body {
+    max-height: 585px;
+    overflow: auto;
+}
+
+.MenuTable-column1Header {
+    border: 3px solid white;
+    border-left-width: 1px;
+    border-top-left-radius: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 50%;
+}
+
+.MenuTable-column2Header {
+    border: 3px solid white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 20%;
+}
+
+.MenuTable-column3Header {
+    border: 3px solid white;
+    border-top-right-radius: 30px;
+    border-right-width: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 40%;
+}
+
+.MenuTable-tableValue {
+    font-size: 15px;
+    color: rgb(128, 5, 5);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.MenuTable-tableValue1 {
+    font-size: 15px;
+    color: rgb(128, 5, 5);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    text-align: center;
+}
+
+.MenuTable-tableValue2 {
+    font-size: 15px;
+    color: rgb(128, 5, 5);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 3px;
+    text-align: center;
+}
+
+.MenuTable-tableValue3 {
+    font-size: 15px;
+    color: rgb(128, 5, 5);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    width: 100px;
+    height: 20px;
+}
+
+.MenuForm {
+    background-color: lightgray;
+    margin: 0 auto;
+    max-width: 600px;
+    border: 1px solid transparent;
+    border-radius: 75px;
+    box-shadow: 0 5px 20px 0px rgba(3, 1, 1, 0.1);
+}
+
+.MenuForm-field {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    padding-left: 20%;
+    display: flex;
+}
+
+.MenuForm-fieldTitle {
+    padding-top: 5px;
+    font-size: 20px;
+    color: rgb(104, 102, 101);
+    font-weight: 1000;
+}
+
+.MenuForm-menuNameInput {
+    margin-left: 50px;
+}
+
+.MenuForm-menuActiveInput {
+    margin-left: 100px;
+    height: 4px;
+    width: 4px;
+}
+
+.MenuForm-submitButton {
+    margin-left: 40%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    height: 50px;
+    border: 1px solid rgb(216, 98, 1);
+    border-radius: 10px;
+    background-image: linear-gradient(rgb(216, 98, 1), rgb(212, 129, 46));
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+}
+
+.NewMenuPage-menusPageLink,
+.ShowMenuPage-link,
+.EditMenuPage-link {
+    margin-top: 100px;
+    margin-left: 200px;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: italic;
+    color: rgb(128, 5, 5);
+}
+
+.ShowMenuPage-createdMessage {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    font-style: italic;
+    padding-bottom: 30px;
+}
+
+.ShowMenuPage-createdMenuDetails {
+    text-align: center;
+    color: rgb(128, 5, 5);
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 30px;
+}

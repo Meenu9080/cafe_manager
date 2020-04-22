@@ -1,0 +1,12 @@
+<section class="ShowMenuPage">
+
+  <p id="notice" class="ShowMenuPage-createdMessage"><%= notice %></p>
+
+  <p class="ShowMenuPage-createdMenuDetails">Menu name: <%= @menu.menu_name %></p>
+
+  <p class="ShowMenuPage-createdMenuDetails">Active: <%= @menu.active %></p>
+
+  <p class="ShowMenuPage-link">
+    <%= link_to "Edit", edit_menu_path(@menu) %> | <%= link_to "Back", menus_path %>
+  </p>
+</section>

@@ -1,0 +1,185 @@
+.OrderPage,
+.NewOrderPage,
+.ShowOrderPage,
+.EditOrderPage {
+    max-width: 1000px;
+    margin: 100px auto;
+    font-family: sans-serif;
+    align-items: center;
+}
+
+.OrderHeader {
+    display: inline-flex;
+}
+
+.OrderHeader-title,
+.NewOrderPage-title,
+.EditOrderPage-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0.14px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    color: rgb(128, 5, 5);
+}
+
+.OrderHeader-newOrderLink {
+    margin-left: 800px;
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    font-style: italic;
+}
+
+.OrderTable {
+    border: 1px solid transparent;
+    border-radius: 30px;
+    width: 100%;
+    box-shadow: 0 5px 20px 0px rgba(3, 1, 1, 0.1);
+}
+
+.OrderTable-head {
+    background-color: lightgray;
+    color: rgb(104, 102, 101);
+    font-size: 20px;
+    text-align: center;
+}
+
+.OrderTable-body {
+    max-height: 585px;
+    overflow: auto;
+}
+
+.OrderTable-column1Header {
+    border: 3px solid white;
+    border-left-width: 1px;
+    border-top-left-radius: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 20%;
+}
+
+.OrderTable-column2Header {
+    border: 3px solid white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 10%;
+}
+
+.OrderTable-column3Header {
+    border: 3px solid white;
+    border-top-right-radius: 30px;
+    border-right-width: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 20%;
+}
+
+.OrderTable-column4Header {
+    border: 3px solid white;
+    border-top-right-radius: 30px;
+    border-right-width: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 20%;
+}
+
+.OrderTable-column5Header {
+    border: 3px solid white;
+    border-top-right-radius: 30px;
+    border-right-width: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 30%;
+}
+
+.OrderTable-tableValue {
+    font-size: 15px;
+    color: rgb(128, 5, 5);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.OrderForm {
+    background-image: linear-gradient(rgb(236, 110, 8), rgb(235, 151, 83));
+    margin: 0 auto;
+    max-width: 600px;
+    border: 1px solid transparent;
+    border-radius: 75px;
+    box-shadow: 0 5px 20px 0px rgba(3, 1, 1, 0.1);
+}
+
+.OrderForm-field {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    padding-left: 20%;
+    display: flex;
+}
+
+.OrderForm-fieldTitle {
+    padding-top: 5px;
+    font-size: 20px;
+    color: white;
+    font-weight: 1000;
+}
+
+.OrderForm-userIDInput {
+    margin-left: 50px;
+}
+
+.OrderForm-dateInput {
+    margin-left: 50px;
+}
+
+.OrderForm-deliveredAtInput {
+    margin-left: 50px;
+}
+
+.OrderForm-statusInput {
+    margin-left: 50px;
+}
+
+.OrderForm-submitButton {
+    margin-left: 40%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    height: 50px;
+    border: 1px solid rgb(128, 5, 5);
+    border-radius: 10px;
+    background-color: rgb(128, 5, 5);
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+}
+
+.NewOrderPage-ordersPageLink,
+.ShowOrderPage-link,
+.EditOrderPage-link {
+    margin-top: 100px;
+    margin-left: 200px;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: italic;
+    color: rgb(128, 5, 5);
+}
+
+.ShowOrderPage-createdMessage {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    font-style: italic;
+    padding-bottom: 30px;
+}
+
+.ShowOrderPage-createdOrderDetails {
+    text-align: center;
+    color: rgb(128, 5, 5);
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 30px;
+}

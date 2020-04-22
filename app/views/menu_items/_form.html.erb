@@ -1,0 +1,47 @@
+<section class="MenuItemForm">
+  <%= form_with(model: menu_item, local: true) do |form| %>
+    <% if menu_item.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(menu_item.errors.count, "error") %> prohibited this menu_item from being saved:</h2>
+
+        <ul>
+          <% menu_item.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+
+    <%= hidden_field_tag "current_menu_id", @current_menu_id %>
+
+    <div style="visibility: hidden;">
+      <%= form.text_field :menu_id %>
+    </div>
+
+    <div class="MenuItemForm-field">
+      <p class="MenuItemForm-fieldTitle"><%= form.label :menu_item_name %></p>
+      <div class="MenuItemForm-menuItemNameInput">
+        <%= form.text_field :menu_item_name %>
+      </div>
+    </div>
+
+    <div class="MenuItemForm-field">
+      <p class="MenuItemForm-fieldTitle"><%= form.label :menu_item_price %></p>
+      <div class="MenuItemForm-menuItemPriceInput">
+        <%= form.text_field :menu_item_price %>
+      </div>
+    </div>
+
+    <div class="MenuItemForm-field">
+      <p class="MenuItemForm-fieldTitle"><%= form.label :stock %></p>
+      <div class="MenuItemForm-menuItemStockInput">
+        <%= form.number_field :stock %>
+      </div>
+    </div>
+
+    <div class="actions">
+      <%= form.submit class: "MenuItemForm-submitButton" %>
+    </div>
+  <% end %>
+</section>

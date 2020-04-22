@@ -1,0 +1,9 @@
+<section class="EditMenuItemPage">
+  <h1 class="EditMenuItemPage-title">Editing Menu Item</h1>
+
+  <%= render "form", menu_item: @menu_item %>
+
+  <p class="EditMenuItemPage-link">
+    <%= link_to "Back", menu_items_path(:current_menu_id => @current_menu_id) %>
+  </p>
+</section>

@@ -1,0 +1,29 @@
+<section class="OrderItemPage">
+  <p id="notice"><%= notice %></p>
+
+  <div class="OrderItemHeader">
+    <h1 class="OrderItemHeader-title">Order Items</h1>
+  </div>
+
+  <table class="OrderItemTable">
+    <thead class="OrderItemTable-head">>
+      <tr>
+        <th class="OrderItemTable-column1Header">Menu item name</th>
+        <th class="OrderItemTable-column2Header">Menu item price</th>
+        <th class="OrderItemTable-column3Header">Quantity</th>
+        <th class="OrderItemTable-column4Header">Total</th>
+      </tr>
+    </thead>
+
+    <tbody class="OrderItemTable-body">
+      <% @order_items.each do |order_item| %>
+        <tr>
+          <td class="OrderItemTable-tableValue"><%= order_item.menu_item_name %></td>
+          <td class="OrderItemTable-tableValue"><%= order_item.menu_item_price %></td>
+          <td class="OrderItemTable-tableValue"><%= order_item.quantity %></td>
+          <td class="OrderItemTable-tableValue"><%= order_item.total %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</section>

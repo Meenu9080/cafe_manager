@@ -1,0 +1,31 @@
+<section class="MenuPage">
+
+  <p id="notice"><%= notice %></p>
+
+  <div class="MenuHeader">
+    <h1 class="MenuHeader-title">Menus</h1>
+    <p class="MenuHeader-newMenuLink"><%= link_to "New Menu", new_menu_path %></p>
+  </div>
+
+  <table class="MenuTable">
+    <thead class="MenuTable-head">
+      <tr>
+        <th class="MenuTable-column1Header">Menu name</th>
+        <th class="MenuTable-column2Header">Active</th>
+        <th class="MenuTable-column1Header" colspan="3">Options</th>
+      </tr>
+    </thead>
+
+    <tbody class="MenuTable-body">
+      <% @menus.each do |menu| %>
+        <tr>
+          <td class="MenuTable-tableValue"><%= menu.menu_name %></td>
+          <td class="MenuTable-tableValue"><%= menu.active %></td>
+          <td class="MenuTable-tableValue1"><%= link_to "Show", menu %></td>
+          <td class="MenuTable-tableValue2"><%= link_to "Edit", edit_menu_path(menu) %></td>
+          <td class="MenuTable-tableValue3"><%= link_to "Destroy", menu, method: :delete, data: { confirm: "Are you sure?" } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</section>
